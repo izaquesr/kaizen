@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kaizen S.R — Conteúdo que Gera Resultados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+<body>
+
+    <div class="toast" id="toast"></div>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#" class="nav-logo"><img src="./img/image.png" alt="Kaizen S.R"></a>
+        <ul class="nav-links">
+            <li><a href="#planos">Planos de Conteúdo</a></li>
+            <li><a href="#sites">Sites</a></li>
+            <li><a href="#orcamento" id="navOrcBtn">Orçamento</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:12px">
+            <a href="#orcamento" class="nav-cta" id="navOrcBtn2">Pedir Orçamento</a>
+            <button class="hamburger" id="menuBtn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mm-close" id="mmClose">✕</button>
+        <a class="mm-link" href="#planos">Planos</a>
+        <a class="mm-link" href="#sites">Sites</a>
+        <a class="mm-link" href="#" id="mmOrc" style="color:var(--purple3)">Orçamento</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb1"></div>
+            <div class="hero-orb2"></div>
+            <div class="hero-grid-line"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Kaizen S.R — Conteúdo Estratégico</div>
+            <h1>Transformo<span>Vídeos em Clientes</span></h1>
+            <p class="hero-desc">Conteúdo estratégico que atrai, prende e converte. Sua marca no topo, sempre.</p>
+            <div class="hero-btns">
+                <a href="#planos" class="btn-purple">Ver Planos</a>
+                <a href="#sites" class="btn-outline-p">Criar Site</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hs-item">
+                    <div class="hs-num">500+</div>
+                    <div class="hs-lbl">Vídeos Entregues</div>
+                </div>
+                <div class="hs-item">
+                    <div class="hs-num">100%</div>
+                    <div class="hs-lbl">Foco em Resultado</div>
+                </div>
+                <div class="hs-item">
+                    <div class="hs-num">3x</div>
+                    <div class="hs-lbl">Mais Alcance</div>
+                </div>
+            </div>
+        </div>
+        <img class="hero-logo-float" src="LOGO_SRC_PLACEHOLDER" alt="">
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+        <div class="marquee-track" id="mq"></div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features-strip">
+        <div class="feat-item reveal"><span class="feat-icon">▶️</span>
+            <div class="feat-title">Vídeos que Prendem</div>
+            <div class="feat-desc">Edição profissional que captura atenção nos primeiros segundos</div>
+        </div>
+        <div class="feat-item reveal rd1"><span class="feat-icon">🎯</span>
+            <div class="feat-title">Estratégia que Vende</div>
+            <div class="feat-desc">Roteiros com gatilhos mentais focados em conversão</div>
+        </div>
+        <div class="feat-item reveal rd2"><span class="feat-icon">📈</span>
+            <div class="feat-title">Conteúdo Diário</div>
+            <div class="feat-desc">Frequência consistente para crescer no algoritmo</div>
+        </div>
+        <div class="feat-item reveal rd3"><span class="feat-icon">👑</span>
+            <div class="feat-title">Sua Marca no Topo</div>
+            <div class="feat-desc">Identidade visual forte e posicionamento premium</div>
+        </div>
+    </div>
+
+    <!-- PLANOS -->
+    <section id="planos">
+        <div class="sec-header">
+            <div>
+                <div class="sec-tag reveal">Serviços Digitais</div>
+                <h2 class="sec-h2 reveal rd1">Pacotes de <span>Conteúdo</span></h2>
+            </div>
+            <div class="sec-sub reveal rd2">Gestão completa do seu Instagram para crescer e vender todo dia</div>
+        </div>
+        <div class="plans-grid">
+            <!-- START -->
+            <div class="plan-card reveal">
+                <div class="plan-glow"></div>
+                <div class="plan-label">Pacote</div>
+                <div class="plan-name">START</div>
+                <div class="plan-tagline">Ideal para começar</div>
+                <div class="plan-main">10 REELS</div>
+                <div class="plan-main-sub">+ 5 Posts Feed</div>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li>
+                        <div><strong>10 Vídeos (Reels)</strong>Edição profissional</div>
+                    </li>
+                    <li>
+                        <div><strong>5 Posts Para Feed</strong>Artes profissionais</div>
+                    </li>
+                    <li>
+                        <div><strong>Roteiros Estratégicos</strong>Focados em conversão</div>
+                    </li>
+                    <li>
+                        <div><strong>Legendas Persuasivas</strong>Para gerar conexão</div>
+                    </li>
+                    <li>
+                        <div><strong>Plano de Conteúdo</strong>Alinhado ao seu objetivo</div>
+                    </li>
+                </ul>
+                <div class="plan-price-label">Investimento</div>
+                <div class="plan-price">SOB CONSULTA</div>
+                <button class="btn-plan" data-plan="Pacote START — 10 Reels + 5 Posts Feed">Pedir Orçamento</button>
+            </div>
+            <!-- PRO -->
+            <div class="plan-card featured reveal rd1">
+                <div class="plan-glow"></div>
+                <div class="plan-label">Pacote</div>
+                <div class="plan-name purple">PRO</div>
+                <div class="plan-tagline">Para marcas que querem crescer</div>
+                <div class="plan-main">20 REELS</div>
+                <div class="plan-main-sub">+ 10 Posts Feed</div>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li>
+                        <div><strong>20 Vídeos (Reels)</strong>Edição profissional</div>
+                    </li>
+                    <li>
+                        <div><strong>10 Posts Para Feed</strong>Artes profissionais</div>
+                    </li>
+                    <li>
+                        <div><strong>Roteiros Estratégicos</strong>Com gatilhos de conversão</div>
+                    </li>
+                    <li>
+                        <div><strong>Legendas Persuasivas</strong>Para gerar engajamento e vendas</div>
+                    </li>
+                    <li>
+                        <div><strong>Capas Personalizadas</strong>Para todos os vídeos</div>
+                    </li>
+                    <li>
+                        <div><strong>Plano de Conteúdo</strong>Completo e estratégico</div>
+                    </li>
+                    <li>
+                        <div><strong>Relatório de Resultados</strong>Acompanhamento e ajustes</div>
+                    </li>
+                </ul>
+                <div class="plan-price-label">Investimento</div>
+                <div class="plan-price">SOB CONSULTA</div>
+                <button class="btn-plan" data-plan="Pacote PRO — 20 Reels + 10 Posts Feed">Pedir Orçamento</button>
+            </div>
+            <!-- PREMIUM -->
+            <div class="plan-card reveal rd2">
+                <div class="plan-glow"></div>
+                <div class="plan-label">Pacote</div>
+                <div class="plan-name purple">PREMIUM</div>
+                <div class="plan-tagline">Para marcas que lideram</div>
+                <div class="plan-main">30 REELS</div>
+                <div class="plan-main-sub">+ 15 Posts Feed</div>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li>
+                        <div><strong>30 Vídeos (Reels)</strong>Edição premium</div>
+                    </li>
+                    <li>
+                        <div><strong>15 Posts Para Feed</strong>Artes profissionais</div>
+                    </li>
+                    <li>
+                        <div><strong>Roteiros Estratégicos</strong>Com gatilhos avançados</div>
+                    </li>
+                    <li>
+                        <div><strong>Legendas Persuasivas</strong>Focadas em vendas</div>
+                    </li>
+                    <li>
+                        <div><strong>Capas Personalizadas</strong>Identidade visual forte</div>
+                    </li>
+                    <li>
+                        <div><strong>Plano de Conteúdo</strong>Completo + calendário mensal</div>
+                    </li>
+                    <li>
+                        <div><strong>Análise de Resultados</strong>Ajustes para máxima performance</div>
+                    </li>
+                    <li>
+                        <div><strong>Reunião Estratégica</strong>Alinhamento e direcionamento</div>
+                    </li>
+                </ul>
+                <div class="plan-price-label">Investimento</div>
+                <div class="plan-price">SOB CONSULTA</div>
+                <button class="btn-plan" data-plan="Pacote PREMIUM — 30 Reels + 15 Posts Feed">Pedir
+                    Orçamento</button>
+            </div>
+        </div>
+
+        <!-- INCLUDES -->
+        <div class="includes-strip" style="margin-top:2px">
+            <div class="includes-inner">
+                <span class="inc-label">Todos os pacotes incluem:</span>
+                <span class="inc-item">📊 Estratégia Personalizada</span>
+                <span class="inc-item">🎬 Edição Profissional</span>
+                <span class="inc-item">📈 Foco em Resultados</span>
+                <span class="inc-item">💡 Conteúdo com Propósito</span>
+                <span class="inc-item">💬 Atendimento Próximo</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SITES -->
+    <section id="sites">
+        <div class="sec-header">
+            <div>
+                <div class="sec-tag reveal">Desenvolvimento Web</div>
+                <h2 class="sec-h2 reveal rd1">Sites que <span>Vendem</span></h2>
+            </div>
+            <div class="sec-sub reveal rd2">Exemplos reais de projetos entregues</div>
+        </div>
+        <div class="sites-grid products-section" style="padding:0 0 0 0">
+            <div class="site-card reveal" id="site1">
+                <div class="site-preview">
+                    <div class="site-iframe-wrap">
+                        <iframe src="https://izaquesr.github.io/cardapio-digital/" title="Cardápio Digital"
+                            loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+                    <div class="site-overlay"></div>
+                    <div class="site-tag-chip">Cardápio Digital</div>
+                </div>
+                <div class="site-info">
+                    <div class="site-name">Sabor & Arte — Cardápio Digital</div>
+                    <div class="site-desc">Cardápio digital completo com carrinho, pedido via WhatsApp, categorias
+                        de produtos e layout mobile-first. Perfeito para restaurantes, lanchonetes e delivery.</div>
+                    <div class="site-tags"><span class="site-t">Restaurante</span><span
+                            class="site-t">Delivery</span><span class="site-t">WhatsApp</span><span
+                            class="site-t">Mobile</span></div>
+                    <div class="site-footer-row">
+                        <div class="site-price">Sob Consulta</div>
+                        <button class="btn-site-orcamento" data-plan="Site — Cardápio Digital">Quero Este
+                            Site</button>
+                    </div>
+                </div>
+            </div>
+            <div class="site-card reveal rd1" id="site2">
+                <div class="site-preview">
+                    <div class="site-iframe-wrap">
+                        <iframe src="https://izaquesr.github.io/clinicaPremium/" title="Clínica Premium" loading="lazy"
+                            sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+                    <div class="site-overlay"></div>
+                    <div class="site-tag-chip">Site Clínica</div>
+                </div>
+                <div class="site-info">
+                    <div class="site-name">Clínica Premium</div>
+                    <div class="site-desc">Site institucional para clínicas com agendamento via WhatsApp, galeria,
+                        seção sobre, localização e design premium escuro.</div>
+                    <div class="site-tags"><span class="site-t">Clínica</span><span class="site-t">Saúde</span><span
+                            class="site-t">Agendamento</span><span class="site-t">Premium</span></div>
+                    <div class="site-footer-row">
+                        <div class="site-price">Sob Consulta</div>
+                        <button class="btn-site-orcamento" data-plan="Site — Clínica Premium">Quero Este
+                            Site</button>
+                    </div>
+                </div>
+            </div>
+            <div class="site-card reveal rd2" id="site3">
+                <div class="site-preview">
+                    <div class="site-iframe-wrap">
+                        <iframe src="https://izaquesr.github.io/lojaDeRoupa/" title="Loja de Roupa" loading="lazy"
+                            sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+                    <div class="site-overlay"></div>
+                    <div class="site-tag-chip">E-commerce</div>
+                </div>
+                <div class="site-info">
+                    <div class="site-name">NOIR — Loja de Roupas</div>
+                    <div class="site-desc">E-commerce completo com carrinho, seleção de cores e tamanhos,
+                        finalização de compra via WhatsApp e design dark premium.</div>
+                    <div class="site-tags"><span class="site-t">E-commerce</span><span class="site-t">Moda</span><span
+                            class="site-t">Carrinho</span><span class="site-t">Dark</span></div>
+                    <div class="site-footer-row">
+                        <div class="site-price">Sob Consulta</div>
+                        <button class="btn-site-orcamento" data-plan="Site — Loja de Roupas (E-commerce)">Quero Este
+                            Site</button>
+                    </div>
+                </div>
+            </div>
+            <div class="site-card reveal rd3" id="site4">
+                <div class="site-preview">
+                    <div class="site-iframe-wrap">
+                        <iframe src="https://izaquesr.github.io/Confeitaria/" title="Confeitaria" loading="lazy"
+                            sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+                    <div class="site-overlay"></div>
+                    <div class="site-tag-chip">Confeitaria</div>
+                </div>
+                <div class="site-info">
+                    <div class="site-name">La Douceur — Confeitaria</div>
+                    <div class="site-desc">Site de confeitaria artesanal com cardápio de bolos, carrinho,
+                        personalização de pedidos e finalização via WhatsApp em design claro e elegante.</div>
+                    <div class="site-tags"><span class="site-t">Confeitaria</span><span class="site-t">Bolos</span><span
+                            class="site-t">WhatsApp</span><span class="site-t">Claro</span></div>
+                    <div class="site-footer-row">
+                        <div class="site-price">Sob Consulta</div>
+                        <button class="btn-site-orcamento" data-plan="Site — Confeitaria / Loja de Bolos">Quero Este
+                            Site</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA sites -->
+        <div>
+            <p style="font-size:14px;color:var(--gray);margin-bottom:20px;font-weight:300">Não encontrou o que
+                procura? Desenvolvemos qualquer tipo de site!</p>
+            <button class="btn-purple" data-plan="Site Personalizado — Outro tipo de site" id="customSiteBtn">Quero
+                um Site Personalizado</button>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <div
+        style="background:var(--bg2);border-top:1px solid var(--purple-line);border-bottom:1px solid var(--purple-line);padding:60px 5vw;text-align:center;position:relative;z-index:1;overflow:hidden">
+        <div
+            style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(123,47,190,.1) 0%,transparent 70%);pointer-events:none">
+        </div>
+        <div style="position:relative;z-index:1">
+            <div class="sec-tag reveal" style="justify-content:center">Pronto para transformar seu negócio?</div>
+            <h2 class="sec-h2 reveal rd1" style="text-align:center;margin-bottom:16px">Sua marca como uma
+                <span>máquina de clientes</span>
+            </h2>
+            <p style="font-size:14px;color:var(--gray);margin-bottom:32px;font-weight:300" class="reveal rd2">Me
+                chama no direct ou pede um orçamento agora. Vamos conversar sobre o melhor pacote para o seu
+                negócio.</p>
+            <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap" class="reveal rd3">
+                <button class="btn-purple" data-plan="Quero conversar sobre meu negócio" id="ctaOrcBtn">Pedir
+                    Orçamento Agora</button>
+                <a href="https://wa.me/5511992345678" target="_blank" class="btn-outline-p">Me chamar no
+                    WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <div class="fl-logo"><h2>Kezai S.R</h2></div>
+                <p class="fl-p">Conteúdo estratégico que atrai, prende e converte. Transformo vídeos em clientes.
+                </p>
+            </div>
+            <div>
+                <div class="fc-h">Serviços</div>
+                <ul class="fc-ul">
+                    <li><a href="#planos">Pacote Start</a></li>
+                    <li><a href="#planos">Pacote Pro</a></li>
+                    <li><a href="#planos">Pacote Premium</a></li>
+                    <li><a href="#sites">Criação de Sites</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="fc-h">Links</div>
+                <ul class="fc-ul">
+                    <li><a href="https://wa.me/5511959105383" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://www.instagram.com/kaizen.sr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                    <li><a href="#" id="footerOrcBtn">Pedir Orçamento</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <span>Kaizen S.R</span> — Todos os direitos reservados</p>
+            <p style="color:rgba(255,255,255,.15)">Conteúdo que <span>Gera Resultados</span></p>
+        </div>
+    </footer>
+
+    <!-- FLOATS -->
+    <div class="floats">
+        <a href="https://wa.me/5511959105383" target="_blank" class="fb fb-wa" title="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="white">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12 12 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.004 2C6.48 2 2 6.48 2 12.004c0 1.85.504 3.585 1.376 5.073L2 22l5.044-1.322A9.958 9.958 0 0012.004 22C17.52 22 22 17.52 22 12.004S17.52 2 12.004 2z" />
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/kaizen.sr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="fb fb-ig" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="white">
+                <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- ORC MODAL -->
+    <div class="orc-overlay" id="orcOverlay"></div>
+    <div class="orc-modal" id="orcModal">
+        <div class="orc-handle"></div>
+        <button class="orc-close" id="orcClose">✕</button>
+        <div class="orc-inner">
+            <div class="orc-top">
+                <div class="orc-title">Pedir <span>Orçamento</span></div>
+                <div class="orc-sub">Preencha abaixo e te retorno em instantes</div>
+            </div>
+            <div class="orc-plan-chip" id="orcPlanChip">Plano selecionado</div>
+            <div class="f-group">
+                <label>Seu nome</label>
+                <input type="text" id="fNome" placeholder="Como posso te chamar?">
+            </div>
+            <div class="f-group">
+                <label>Nome do seu negócio</label>
+                <input type="text" id="fNegocio" placeholder="Nome da sua empresa ou marca">
+            </div>
+            <div class="f-group">
+                <label>Mensagem <span class="f-opt">(opcional)</span></label>
+                <textarea id="fMsg" placeholder="Conta mais sobre o que você precisa..."></textarea>
+            </div>
+            <button class="btn-send-wa" id="sendWaBtn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12 12 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.004 2C6.48 2 2 6.48 2 12.004c0 1.85.504 3.585 1.376 5.073L2 22l5.044-1.322A9.958 9.958 0 0012.004 22C17.52 22 22 17.52 22 12.004S17.52 2 12.004 2z" />
+                </svg>
+                Enviar pelo WhatsApp
+            </button>
+            <div class="orc-notice">Responderei o mais rápido possível. Vamos conversar sobre o melhor para o seu
+                negócio! 🚀</div>
+        </div>
+    </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>
