@@ -59,13 +59,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 5vw;
-    background: #000;
+    background: #05000cf1;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--purple-line);
 }
 
 .nav-logo img {
-    height: 42px;
+    height: 62px;
     width: auto;
     display: block
 }
