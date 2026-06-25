@@ -77,3 +77,60 @@ function showToast(msg, dur = 2800) {
 document.getElementById('menuBtn').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
 document.getElementById('mmClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
 document.querySelectorAll('.mm-link').forEach(l => l.addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open')));
+/* ── CAROUSEL PLANOS ─────────────────────────────────────────
+   Ativo apenas quando plans-container está em modo flex/scroll
+   ──────────────────────────────────────────────────────────── */
+(function() {
+    const container = document.getElementById('plans-container');
+    if (!container) return;
+
+    const prevBtn = document.getElementById('c-prev');
+    const nextBtn = document.getElementById('c-next');
+    const dots = document.querySelectorAll('.c-dot');
+    const TOTAL = 3;
+    let current = 0;
+
+    function cardWidth() {
+        const c = container.querySelector('.plan-card');
+        if (!c) return 0;
+        const gap = parseFloat(getComputedStyle(container).gap) || 18;
+        return c.offsetWidth + gap;
+    }
+
+    function isCarousel() {
+        return getComputedStyle(container).overflowX === 'auto';
+    }
+
+    function syncDots() {
+        const cw = cardWidth();
+        if (cw > 0) current = Math.round(container.scrollLeft / cw);
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+        if (prevBtn) prevBtn.disabled = current === 0;
+        if (nextBtn) nextBtn.disabled = current >= TOTAL - 1;
+    }
+
+    function goTo(idx) {
+        if (!isCarousel()) return;
+        current = Math.max(0, Math.min(TOTAL - 1, idx));
+        container.scrollTo({ left: cardWidth() * current, behavior: 'smooth' });
+        syncDots();
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
+    dots.forEach(d => d.addEventListener('click', () => goTo(Number(d.dataset.i))));
+
+    let scrollTimer;
+    container.addEventListener('scroll', () => {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(syncDots, 80);
+    }, { passive: true });
+
+    syncDots();
+
+    window.addEventListener('resize', () => {
+        current = 0;
+        if (isCarousel()) container.scrollTo({ left: 0, behavior: 'instant' });
+        syncDots();
+    });
+})();
