@@ -1170,7 +1170,8 @@ footer {
     margin-bottom: 28px;
 }
 
-.fl-logo img {
+.fl-logo h2 {
+    color: var(--purple);
     height: 56px;
     margin-bottom: 14px;
     display: block
@@ -1748,7 +1749,7 @@ footer {
 
 /* Override plan-card dentro do plans-container */
 .plans-container .plan-card {
-    background: var(--bg-3);
+    background: var(--bg3);
     border: 1px solid var(--p-brd);
     border-radius: 16px;
     padding: 30px 26px 28px;

@@ -51,7 +51,7 @@ document.getElementById('sendWaBtn').addEventListener('click', () => {
     const msg = document.getElementById('fMsg').value.trim();
     if (!nome || !neg) { showToast('Preencha seu nome e o nome do negócio ✋'); return; }
 
-    let txt = `🚀 *Solicitação de Orçamento — Kaizen S.R*\n\n`;
+    let txt = `🚀 *Solicitação de Orçamento — Kezai Digital*\n\n`;
     txt += `👤 *Nome:* ${nome}\n`;
     txt += `🏢 *Negócio:* ${neg}\n`;
     txt += `📦 *Serviço/Plano:* ${currentPlan || 'Não especificado'}\n`;
