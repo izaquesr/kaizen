@@ -6,19 +6,19 @@
 }
 
 :root {
-    --bg: #06060a;
-    --bg2: #0d0d14;
-    --bg3: #12121c;
-    --bg4: #1a1a2a;
-    --purple: #7B2FBE;
-    --purple2: #9B4DCA;
-    --purple3: #B57FE0;
-    --purple-dim: rgba(123, 47, 190, .18);
-    --purple-line: rgba(123, 47, 190, .3);
-    --purple-glow: rgba(123, 47, 190, .08);
-    --white: #FFFFFF;
-    --gray: #9090A8;
-    --gray2: #5A5A70;
+    --bg: #d3d3d3;
+    --bg2: #FFFFFF;
+    --bg3: #ECEAE4;
+    --bg4: #0E0E0E;
+    --purple: #1B5FEC;
+    --purple2: #143FB0;
+    --purple3: #1B5FEC;
+    --purple-dim: rgba(27, 95, 236, .10);
+    --purple-line: rgba(27, 95, 236, .25);
+    --purple-glow: rgba(27, 95, 236, .06);
+    --white: #0E0E0E;
+    --gray: #4A4A5C;
+    --gray2: #8A8AA0;
     --ease: cubic-bezier(.16, 1, .3, 1);
     --display: ' Rajdhani', sans-serif;
     --body: 'Inter', sans-serif;
@@ -43,7 +43,7 @@ body::before {
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background-image: linear-gradient(rgba(123, 47, 190, .04) 1px, transparent 1px), linear-gradient(90deg, rgba(123, 47, 190, .04) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(27, 95, 236, .04) 1px, transparent 1px), linear-gradient(90deg, rgba(27, 95, 236, .04) 1px, transparent 1px);
     background-size: 60px 60px;
 }
 
@@ -59,9 +59,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 5vw;
-    background: #05000cf1;
+    background: #ffffff5d;
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--purple-line);
+    border-bottom: 2px solid var(--purple-line);
 }
 
 .nav-logo img {
@@ -82,7 +82,7 @@ nav {
     font-weight: 500;
     letter-spacing: .12em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, .55);
+    color: rgba(0, 0, 0, 0.55);
     text-decoration: none;
     transition: color .2s;
 }
@@ -110,7 +110,7 @@ nav {
 
 .nav-cta:hover {
     background: var(--purple2);
-    box-shadow: 0 0 20px rgba(123, 47, 190, .4)
+    box-shadow: 0 0 20px rgba(27, 95, 236, .4)
 }
 
 .hamburger {
@@ -155,7 +155,7 @@ nav {
     width: 70vw;
     height: 70vw;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(123, 47, 190, .15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(27, 95, 236, .15) 0%, transparent 70%);
     animation: orbFloat 8s ease-in-out infinite alternate;
 }
 
@@ -166,7 +166,7 @@ nav {
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(123, 47, 190, .1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(27, 95, 236, .1) 0%, transparent 70%);
     animation: orbFloat 10s ease-in-out 2s infinite alternate-reverse;
 }
 
@@ -247,7 +247,7 @@ nav {
 .hero-desc {
     font-size: 15px;
     font-weight: 300;
-    color: rgba(255, 255, 255, .5);
+    color: rgba(0, 0, 0, 0.76);
     line-height: 1.85;
     max-width: 480px;
     margin-bottom: 40px;
@@ -278,12 +278,12 @@ nav {
     clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
     transition: background .25s, box-shadow .25s, transform .2s;
     display: inline-block;
-    box-shadow: 0 0 30px rgba(123, 47, 190, .25);
+    box-shadow: 0 0 30px rgba(27, 95, 236, .25);
 }
 
 .btn-purple:hover {
     background: var(--purple2);
-    box-shadow: 0 0 40px rgba(123, 47, 190, .5);
+    box-shadow: 0 0 40px rgba(27, 95, 236, .5);
     transform: translateY(-2px)
 }
 
@@ -589,7 +589,7 @@ section {
     left: -20%;
     width: 140%;
     height: 140%;
-    background: radial-gradient(ellipse at 50% 30%, rgba(123, 47, 190, .08) 0%, transparent 70%);
+    background: radial-gradient(ellipse at 50% 30%, rgba(27, 95, 236, .08) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -727,7 +727,7 @@ section {
 .plan-card.featured .btn-plan {
     background: var(--purple);
     border-color: var(--purple2);
-    box-shadow: 0 0 24px rgba(123, 47, 190, .4);
+    box-shadow: 0 0 24px rgba(27, 95, 236, .4);
     color: var(--white);
 }
 
@@ -757,7 +757,7 @@ section {
 .site-card:hover {
     transform: translateY(-6px);
     border-color: var(--purple-line);
-    box-shadow: 0 12px 40px rgba(123, 47, 190, .15)
+    box-shadow: 0 12px 40px rgba(27, 95, 236, .15)
 }
 
 .site-card:nth-child(1) {
@@ -891,7 +891,7 @@ section {
 
 .btn-site-orcamento:hover {
     background: var(--purple2);
-    box-shadow: 0 0 16px rgba(123, 47, 190, .4)
+    box-shadow: 0 0 16px rgba(27, 95, 236, .4)
 }
 
 /* ─── INCLUDES STRIP
@@ -968,7 +968,7 @@ section {
     overflow-y: auto;
     transform: translateY(100%);
     transition: transform .45s var(--ease);
-    box-shadow: 0 -8px 60px rgba(123, 47, 190, .2);
+    box-shadow: 0 -8px 60px rgba(27, 95, 236, .2);
 }
 
 .orc-modal.show {
@@ -1073,7 +1073,7 @@ section {
 .f-group input:focus,
 .f-group textarea:focus {
     border-color: var(--purple);
-    background: rgba(123, 47, 190, .05)
+    background: rgba(27, 95, 236, .05)
 }
 
 .f-group input::placeholder,
@@ -1153,8 +1153,8 @@ section {
 
 /* ─── FOOTER ─── */
 footer {
-    background: var(--bg2);
-    border-top: 1px solid var(--purple-line);
+    background: #030013;
+    border-top: 1px solid var(--purple2);
     padding: 60px 5vw 36px;
     margin-top: 0;
     position: relative;
@@ -1280,7 +1280,7 @@ footer {
     border: 1px solid var(--purple-line);
     padding: 12px 20px;
     font-size: 13px;
-    color: var(--white);
+    color: var(--gray);
     transform: translateY(12px);
     opacity: 0;
     transition: opacity .3s, transform .3s;
@@ -1300,7 +1300,7 @@ footer {
     position: fixed;
     inset: 0;
     z-index: 700;
-    background: rgba(6, 6, 10, .98);
+    background: rgba(176, 176, 255, 0.918);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1500,7 +1500,7 @@ footer {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 60% 50% at 85% 15%, rgba(123, 47, 190, .07) 0%, transparent 70%);
+    background: radial-gradient(ellipse 60% 50% at 85% 15%, rgba(27, 95, 236, .07) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -1578,7 +1578,7 @@ footer {
 .proj-card:hover {
     transform: translateY(-7px);
     border-color: var(--purple-lt);
-    box-shadow: 0 0 40px rgba(123, 47, 190, .22), 0 14px 40px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 40px rgba(27, 95, 236, .22), 0 14px 40px rgba(0, 0, 0, .5);
 }
 
 /* Thumbnail */
@@ -1770,7 +1770,7 @@ footer {
 
 .plans-container .plan-card.featured {
     border-color: var(--purple);
-    box-shadow: 0 0 52px rgba(123, 47, 190, .22);
+    box-shadow: 0 0 52px rgba(27, 95, 236, .22);
     background: var(--bg-3);
 }
 
@@ -1912,8 +1912,8 @@ footer {
 
 .plan-bonus {
     margin-top: 18px;
-    background: rgba(123, 47, 190, .1);
-    border: 1px solid rgba(123, 47, 190, .26);
+    background: rgba(27, 95, 236, .1);
+    border: 1px solid rgba(27, 95, 236, .26);
     border-radius: var(--rsm);
     padding: 11px 14px;
     font-size: .8rem;

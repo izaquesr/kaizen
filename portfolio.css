@@ -1,0 +1,566 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+:root {
+    --bg: #d3d3d3;
+    --bg2: #FFFFFF;
+    --bg3: #ECEAE4;
+    --bg4: #0E0E0E;
+    --purple: #1B5FEC;
+    --purple2: #143FB0;
+    --purple3: #1B5FEC;
+    --purple-dim: rgba(27, 95, 236, .10);
+    --purple-line: rgba(27, 95, 236, .25);
+    --purple-glow: rgba(27, 95, 236, .06);
+    --white: #0E0E0E;
+    --gray: #4A4A5C;
+    --gray2: #8A8AA0;
+    --ease: cubic-bezier(.16, 1, .3, 1);
+    --display: ' Rajdhani', sans-serif;
+    --body: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px
+}
+
+body {
+    font-family: var(--body);
+    background: var(--bg);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+.wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 5vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 5vw;
+    background: #ffffff5d;
+    backdrop-filter: blur(20px);
+    border-bottom: 2px solid var(--purple-line);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    height: 34px;
+    width: auto;
+}
+
+.nav-word {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: var(--gray);
+    transition: color .3s var(--ease);
+}
+
+.nav-links a:hover {
+    color: var(--blue3);
+}
+
+.nav-cta {
+    background: var(--purple2);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s var(--ease);
+    white-space: nowrap;
+}
+
+.nav-cta:hover {
+    background: var(--blue2);
+    box-shadow: 0 0 20px var(--blue-dim);
+}
+
+@media (max-width: 860px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 5vw 60px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-orb1,
+.hero-orb2 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: .5;
+}
+
+.hero-orb1 {
+    width: 480px;
+    height: 480px;
+    background: var(--blue-glow);
+    top: -160px;
+    left: -120px;
+}
+
+.hero-orb2 {
+    width: 380px;
+    height: 380px;
+    background: var(--blue-glow);
+    bottom: -140px;
+    right: -100px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: var(--blue-dim);
+    border: 1px solid var(--blue-line);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-family: var(--display);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--blue3);
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-family: var(--display);
+    font-size: clamp(36px, 6vw, 60px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    display: block;
+    background: linear-gradient(135deg, var(--blue2), var(--blue3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--gray);
+    max-width: 520px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-blue,
+.btn-outline-b {
+    font-family: var(--display);
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all .3s var(--ease);
+    display: inline-block;
+}
+
+.btn-blue {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.btn-blue:hover {
+    background: var(--blue2);
+    box-shadow: 0 8px 30px var(--blue-dim);
+    transform: translateY(-2px);
+}
+
+.btn-outline-b {
+    background: transparent;
+    border: 1px solid var(--blue-line);
+    color: var(--blue3);
+}
+
+.btn-outline-b:hover {
+    background: var(--blue-dim);
+    border-color: var(--blue3);
+}
+
+/* SECTION SHARED */
+section {
+    padding: 90px 0;
+}
+
+.eyebrow {
+    font-family: var(--display);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--blue3);
+    margin-bottom: 12px;
+}
+
+.sec-title {
+    font-family: var(--display);
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.sec-title .ac {
+    color: var(--blue3);
+}
+
+.sec-sub {
+    color: var(--gray);
+    font-weight: 300;
+    max-width: 600px;
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+
+/* REELS GRID */
+.reels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .reels-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .reels-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.reel-card {
+    background: var(--bg2);
+    border: 1px solid var(--blue-line);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all .4s var(--ease);
+}
+
+.reel-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--blue3);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .4);
+}
+
+.reel-frame {
+    aspect-ratio: 9 / 16;
+    background: var(--bg3);
+    position: relative;
+}
+
+.reel-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #000;
+}
+
+/* Used when a real embed (Instagram/TikTok blockquote) is placed inside .reel-frame —
+   embeds size themselves, so we let height be automatic instead of forcing 9:16 */
+.reel-frame-embed {
+    aspect-ratio: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.reel-frame-embed .instagram-media,
+.reel-frame-embed iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* To embed a real video/reel, replace .reel-placeholder with an <iframe> or <video> tag */
+.reel-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--gray2);
+    text-align: center;
+    padding: 20px;
+}
+
+.reel-placeholder span {
+    font-size: 34px;
+    color: var(--blue3);
+}
+
+.reel-placeholder p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.reel-info {
+    padding: 16px 18px 20px;
+}
+
+.reel-tag {
+    font-family: var(--display);
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--blue3);
+    margin-bottom: 6px;
+}
+
+.reel-name {
+    font-family: var(--display);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* PROCESS */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.proc-item {
+    background: var(--bg2);
+    border: 1px solid var(--blue-line);
+    border-radius: 16px;
+    padding: 28px 22px;
+}
+
+.proc-num {
+    font-family: var(--display);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--blue-dim);
+    -webkit-text-stroke: 1px var(--blue3);
+    margin-bottom: 14px;
+}
+
+.proc-item h3 {
+    font-family: var(--display);
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.proc-item p {
+    font-size: 14px;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* CTA BAND */
+.cta-band {
+    background: var(--bg2);
+    border-top: 1px solid var(--blue-line);
+    border-bottom: 1px solid var(--blue-line);
+    padding: 70px 5vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-band::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, var(--blue-glow) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.cta-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-band h2 {
+    font-family: var(--display);
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.cta-band h2 span {
+    color: var(--blue3);
+}
+
+.cta-band p {
+    color: var(--gray);
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+/* FOOTER */
+footer {
+    padding: 60px 5vw 30px;
+}
+
+.footer-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--blue-line);
+}
+
+@media (max-width: 620px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fl-logo h2 {
+    font-family: var(--display);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.fl-p {
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 14px;
+    max-width: 340px;
+    line-height: 1.6;
+}
+
+.fc-h {
+    font-family: var(--display);
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--blue3);
+    margin-bottom: 16px;
+}
+
+.fc-ul li {
+    margin-bottom: 10px;
+}
+
+.fc-ul a {
+    color: var(--gray);
+    font-size: 14px;
+    transition: color .3s var(--ease);
+}
+
+.fc-ul a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    max-width: 1180px;
+    margin: 24px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--gray2);
+}
+
+.footer-bottom span {
+    color: var(--blue3);
+}
+
+/* REVEAL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .8s var(--ease), transform .8s var(--ease);
+}
+
+.reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
